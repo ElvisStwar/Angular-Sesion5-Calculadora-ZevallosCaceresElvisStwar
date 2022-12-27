@@ -1,1 +1,32 @@
-<p>calculadora works!</p>
+<div class="container text-center mt-5">
+    <div>
+        <div class="card">
+            <h5 class="card-header">Calculadora</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6">
+                    <div class="p-2">
+                        <input type="text" class="form-control" #num1 placeholder="Inserte número" maxlength="10">
+                    </div>
+                    <div class="p-2">
+                        <input type="text" class="form-control" #num2 placeholder="Inserte número" maxlength="10">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-2">
+                        <h1>{{res2}}</h1>
+                    </div>
+                    <div class="p-2">
+                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-primary" (click)="suma(num1.value, num2.value)">+</button>
+                            <button type="button" class="btn btn-warning" (click)="resta(num1.value, num2.value)">-</button>
+                            <button type="button" class="btn btn-success" (click)="multi(num1.value, num2.value)">x</button>
+                            <button type="button" class="btn btn-danger" (click)="divi(num1.value, num2.value)">/</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
